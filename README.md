@@ -2,6 +2,6 @@
 
 ## Ubuntu install command
 
-sudo dkms add lsm-hook
+sudo dkms add hello
 
-sudo dkms install -m lsm-hook -v 0.1
+sudo dkms install -m hello -v 0.1
