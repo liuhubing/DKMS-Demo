@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
           steps {
             sh '''echo "Build"
-echo sh(script: \'env|sort\', returnStdout: true)'''
+echo sh(returnStdout: true, script: \'env\')'''
           }
         }
 
