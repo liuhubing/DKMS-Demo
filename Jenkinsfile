@@ -5,7 +5,9 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            sh 'echo "Build"'
+            sh '''echo "Build"
+sh "export TEST_ENV="This is test env set"
+echo $TEST_ENV'''
           }
         }
 
