@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
           steps {
             sh '''echo "Build"
-echo $TEST_ENV'''
+sh "env"'''
           }
         }
 
@@ -54,8 +54,5 @@ echo $TEST_ENV'''
       }
     }
 
-  }
-  environment {
-    TEST_ENV = 'This is test file'
   }
 }
