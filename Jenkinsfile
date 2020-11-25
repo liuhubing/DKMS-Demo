@@ -6,8 +6,7 @@ pipeline {
         stage('Build') {
           steps {
             sh '''echo "Build"
-sh "export TEST_ENV=Test"
-echo $TEST_ENV'''
+sh "env"'''
           }
         }
 
